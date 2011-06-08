@@ -20,7 +20,6 @@ import sys, os
 # is relative to the documentation root, use os.path.abspath to make it
 # absolute, like shown here.
 sys.path.append(os.path.abspath('.'))
-sys.path.append(os.path.abspath('_themes'))
 
 # General configuration
 # ---------------------
@@ -94,9 +93,6 @@ add_function_parentheses = True
 # output. They are ignored by default.
 #show_authors = False
 
-# The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'werkzeug_theme_support.WerkzeugStyle'
-
 # doctest setup code
 doctest_global_setup = '''\
 from werkzeug import *
@@ -106,8 +102,7 @@ from werkzeug import *
 # Options for HTML output
 # -----------------------
 
-html_theme = 'werkzeug'
-html_theme_path = ['_themes']
+html_theme = 'default'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
